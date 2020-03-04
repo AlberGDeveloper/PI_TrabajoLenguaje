@@ -4,16 +4,35 @@
 	<title>strennner</title>
 	<link rel="stylesheet" href="css.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+	<script src="javascript.js">
+    window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
 </head>
 <body>
+
 	<header>
 		<h1 id="tit">Strenner</h1>
 		<img id="hh" src="https://seeklogo.com/images/I/Informatica_Avanzada-logo-99434D13E0-seeklogo.com.png">
 		
-		 <nav><div id="divher">
+		 <nav id="navbar">
         
            <ul class="nav">
-            <li><a href="#" class="lis">PC</a>
+            <li><a href="#" class="lis" id="pcc">PC</a>
             <ul><br>
                 <li><a href="#">Hardware</a></li>
                 <li><a href="#">Software</a></li>
@@ -21,7 +40,7 @@
                 <li><a href="#">Sobremesas</a></li>
                 
             </ul></li>
-            <li><a href="#"  class="lis">Videojuegos</a>
+            <li><a href="#"  class="lis" id="video">Videojuegos</a>
             <ul>
                 <br>
                 <li> <a href="#">Avances</a></li>
@@ -30,7 +49,7 @@
                 <li> <a href="#">E-Sports</a></li>
             </ul>
             </li>
-            <li><a href="#"  class="lis">Electrónica</a>
+            <li><a href="#"  class="lis" id="elect">Electrónica</a>
             <ul>
                 <br>
                 <li><a href="#">Internet</a></li>
@@ -42,10 +61,10 @@
                 </li>
                     
             </ul></li>
-            <li  class="lis"><a href="#">Home</a></li>
-            <li  class="lis"><a href="#">Contact US</a></li>
+            <li  class="lis" id="home"><a href="#">Home</a></li>
+            <li  class="lis" id="contac"><a href="#">Contact US</a></li>
             </ul>
-            </div>
+            
             </nav>
 		
 	</header>

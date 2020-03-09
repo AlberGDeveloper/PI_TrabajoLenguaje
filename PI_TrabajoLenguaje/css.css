@@ -22,7 +22,7 @@ header{
     margin: 0;
     padding-top: 10px;
     text-align: center;
-      height: 120px; 
+      height: 178px; 
     opacity: 90%;
     text-align: center;
     color:white;
@@ -138,41 +138,51 @@ form{
 }
 
 
-
-nav{
-    margin-top: 20px;
-    width: 100%;
-    height:47px;
+#her{
     background: black;
-   border-top: darkgrey 2px solid;
-    padding-bottom: 10px; 
+    height: 20px;
+}
+nav{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 55px;
+    background: black;
+    border-top: darkgrey 2px solid;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0px;
+    
 }
 
 
-nav a{
-      text-decoration:none;
-      font-size:14px;
-    color: white;
-      }
-            
 nav  li{
       display:block;
       float: right;
-      width:133px;
+      width:143px;
       height:20px;
       padding:5px 10px;
       background-color:black;
       text-align:center;
       color:white;
-      position:relative;
-      margin left: 0px;
+    position: relative;
+
 }
+
+nav a{
+      text-decoration:none;
+      font-size:14px;
+      color: white;
+    
+      }
             
 nav li:hover{
       background-color:white;
       color:black;
       }
+
 nav li:hover >a{
+    background-color:white;
     color: black;
 }
             
@@ -186,3 +196,83 @@ nav li:hover>ul{
       top:10px;
       left:-50px;
 }
+
+
+#secheaderimg{
+    
+}
+
+
+aside{
+    position: absolute;
+    background-color: black;
+    width:80px;
+    height: 587px;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    padding: 0px;
+    margin:0px;
+}
+ aside ul{
+    margin-left: -40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+aside li{
+    padding: 12px;
+    text-align: center;
+    list-style: none;
+    color:blue;
+    opacity: 80%;
+    
+}
+aside li:hover > p{
+    color:black;
+    display: block;
+    
+    
+}
+aside ul li{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+ aside img{
+    width: 45px;
+    
+}
+aside p{
+   color: white;
+    display: none;
+    margin-bottom: 10px;
+    margin-top: -5px;
+   
+}
+aside li:hover{
+    opacity: 100%;
+    
+    border-color:cornflowerblue;
+    background-color: #0E466E;
+    background-color: white;
+}
+aside:hover{
+    width: 160px;
+}
+
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+

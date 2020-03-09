@@ -143,39 +143,46 @@ form{
     height: 20px;
 }
 nav{
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     width: 100%;
-    height:47px;
+    height: 55px;
     background: black;
-   border-top: darkgrey 2px solid;
-    padding-bottom: 10px; 
+    border-top: darkgrey 2px solid;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0px;
+    
 }
 
 
-nav a{
-      text-decoration:none;
-      font-size:14px;
-    color: white;
-      }
-            
 nav  li{
       display:block;
       float: right;
-      width:133px;
+      width:143px;
       height:20px;
       padding:5px 10px;
       background-color:black;
       text-align:center;
       color:white;
-      position:relative;
-      margin left: 0px;
+    position: relative;
+
 }
+
+nav a{
+      text-decoration:none;
+      font-size:14px;
+      color: white;
+    
+      }
             
 nav li:hover{
       background-color:white;
       color:black;
       }
+
 nav li:hover >a{
+    background-color:white;
     color: black;
 }
             
